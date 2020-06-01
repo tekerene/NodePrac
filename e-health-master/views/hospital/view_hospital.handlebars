@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>view hospital</h1>
+     {{#each hospitalList}}
+          <div class="card ml-3">
+                <div class="card-header">{{name}}</div>
+                <div class="card-body">
+                    <div class="d-flex flex-column">
+                         <div class="h4">ID: {{id}}</div>
+                        <div class="h3">Contact: {{contact}}</div>
+                         <div class="h4">Location: {{location}}</div> 
+                         
+                        
+                    </div>
+                    
+                </div>
+               
+                
+            </div>
+         
+      {{/each}}
+</body>
+</html>

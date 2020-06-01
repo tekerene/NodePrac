@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voters List</title>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="bg-dark p-3">
+        <ul class="list d-flex justify-content-center text-uppercase">
+            <li class="d-flex mr-4"><a href="/home">Home</a></li>
+            <!-- <li class="d-flex mr-4 "><a href="/register">Register</a></li> -->
+            <li class="d-flex"><a href="/detail">Show_detail</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="p-3 text-center jumbotron">
+            <h1>Vote</h1>
+            <p>Chose Your Favourite Parties</p>
+            <h4 class=""><marquee>NOTE!! Only One Vote</marquee></h4>
+        </div>
+        <div class="d-flex flex-column">
+        <form action="/voters" method="POST">
+            <div class="form-check-online">
+                <label class="form-check-label">
+                    <input type="radio" name="opradio"  class="form-check-input">YYMD
+                </label>
+            </div>
+            <div class="form-check-online">
+                <label class="form-check-label">
+                    <input type="radio" name="opradio"  class="form-check-input">NFMC
+                </label>
+            </div>
+            <div class="form-check-online">
+                <label class="form-check-label">
+                    <input type="radio" name="opradio"  class="form-check-input">EEU
+                </label>
+            </div>
+            <div class="form-check-online">
+                <label class="form-check-label">
+                    <input type="radio" name="opradio"  class="form-check-input">LNWWM
+                </label>
+            </div>
+            <div class="form-group d-flex align-tex-bottom pt-3">
+                <div class="pl-2"><label for="name" class="pr-1">Name</label></div>
+                <div class="pr-2 col-6">
+                    <input type="text" class="form-control flex-fill" id="name" name="name" placeholder="Enter your Name" r>   
+                </div>
+            </div>
+            <div class="form-group d-flex align-tex-bottom pt-3">
+                <div class="pl-2"><label for="id_number" class="pr-1">IDNumber</label></div>
+                <div class="pr-2 col-6">
+                    <input type="text" class="form-control flex-fill" id="id_number" name="id_number" placeholder="Enter your idNumber" r>   
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Vote</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

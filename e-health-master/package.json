@@ -1,0 +1,26 @@
+{
+  "name": "e-health",
+  "version": "1.0.0",
+  "description": "Manages, Tracks Patient History",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "e-health",
+    "africa",
+    "hospitals",
+    "manage",
+    "patients",
+    "medication",
+    "history",
+    "hospital",
+    "manager"
+  ],
+  "author": "Seven Academy - Class Sep 2019",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4"
+  }
+}
